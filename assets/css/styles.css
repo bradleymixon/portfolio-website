@@ -96,14 +96,16 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 4rem;
     max-width: 68.75rem;
     margin: auto;
 }
 
 .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 20%;
+    margin-top: 30px;
 }
 
 .bio {
@@ -125,6 +127,7 @@ nav ul li {
 .more-about {
     background-color: var(--bg-color);
     padding: 1rem 6rem;
+    margin-top: 50px;
 }
 
 .more-about h2 {
