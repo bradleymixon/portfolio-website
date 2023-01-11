@@ -195,7 +195,46 @@
      </div>
    </section>
  
+   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {
+      action: "https://formspree.io/f/mgebeqpl",
+      fields: [
+         { 
+           type: "email", 
+           label: "Email:", 
+           name: "email",
+           required: true,
+           placeholder: "your@email.com"
+         },
+         {
+           type: "textarea",
+           label: "Message:",
+           name: "message",
+           placeholder: "Feel free to reach out regarding internships, freelance opportunities, etc",
+         },
+         { type: "submit" }      
+       ],
+  styles: {
+    fontFamily:'"Lato", sans-serif',
+    button: {
+      background: "#209CEE"
+    },
+    title: {
+      background: "#209CEE",
+      letterSpacing: "0.05em",
+      textTransform: "uppercase"
+    }
+  },
+  // ...
+});
+  
+  </script>
+
+  
    
+   <!--
    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
    <script>
@@ -233,6 +272,7 @@
        initiallyVisible: false
      });
    </script> 
+  -->
 
    <!-- Contact section 
    <section class="contact" id="contact">
