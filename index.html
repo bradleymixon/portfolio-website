@@ -196,7 +196,45 @@
    </section>
  
    
-   <!-- Contact section -->
+   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+   <script>
+     /* paste this in verbatim */
+     window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+   
+     /* customize formbutton here*/     
+     formbutton("create", {
+       action: "https://formspree.io/f/mgebeqpl",
+       title: "How can we help?",
+       fields: [
+         { 
+           type: "email", 
+           label: "Email:", 
+           name: "email",
+           required: true,
+           placeholder: "your@email.com"
+         },
+         {
+           type: "textarea",
+           label: "Message:",
+           name: "message",
+           placeholder: "What's on your mind?",
+         },
+         { type: "submit" }      
+       ],
+       styles: {
+         title: {
+           backgroundColor: "#209CEE"
+         },
+         button: {
+           backgroundColor: "#209CEE"
+         }
+       },
+       initiallyVisible: false
+     });
+   </script> 
+
+   <!-- Contact section 
    <section class="contact" id="contact">
      <h2>Get in Touch With Me</h2>
      <div class="contact-form-container">
@@ -208,7 +246,7 @@
                type="text"
                id="name"
                name="sender-name"
-               placeholder="Enter Your Name"
+               placeholder="  Enter Your Name"
                class="input-field"
                required
              />
@@ -219,7 +257,7 @@
                type="email"
                id="email"
                name="sender-email"
-               placeholder="Enter Your Email"
+               placeholder="  Enter Your Email"
                class="input-field"
                required
              />
@@ -231,7 +269,7 @@
                cols="60"
                rows="10"
                name="message"
-               placeholder="Enter Your Message"
+               placeholder="  Enter Your Message"
                class="input-field"
                required
              ></textarea>
@@ -246,6 +284,7 @@
        </div>
      </div>
    </section>
+  -->
  
    <!-- Social accounts - Fixed to the right -->
    <div class="socials">
@@ -275,6 +314,7 @@
      </a>
    </div>
  
+   <!--
    <i class="scroll-up" id="scroll-up">
      <img
        src="assets/icons/icons8-upward-arrow.gif"
@@ -282,6 +322,7 @@
        alt="scroll-up"
      />
    </i>
+  -->
  
    <!-- Footer section -->
    <footer>
